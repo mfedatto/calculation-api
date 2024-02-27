@@ -17,8 +17,6 @@ public class Program
         app.UseSwagger();
         app.UseSwaggerUI();
 
-        app.UseHttpsRedirection();
-
         app.MapGet(
                 "/calculations", (
                     [FromQuery(Name = "expression")] string expression,

@@ -16,7 +16,7 @@ public partial class Calculator
 
     private readonly string _expression;
 
-    public Calculator(string expression, char decimalSymbol = '.')
+    public Calculator(string expression)
     {
         _expression = ExpressionForbiddenCharsRegex()
             .Replace(expression, string.Empty);;
